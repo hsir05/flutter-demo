@@ -28,16 +28,60 @@ class TutorialHome extends StatelessWidget {
           )
         ],
       ),
-      body: new Center(
-        child: new Text('hello flutter'),
-      ),
-      floatingActionButton: new FloatingActionButton(
-        tooltip: 'Add',
-        child: new Icon(Icons.add),
-        onPressed: () {
-          print(555555);
-        },
-      ),
+         
+      body: new Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            new Text(
+              'hello flutter444',
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                color: Colors.blue,
+                fontSize: 18.0,
+                height: 1.2,  
+                fontFamily: "Courier",
+                background: new Paint()..color=Colors.yellow,
+              ),
+            ),
+            RaisedButton(
+              child: Text("normal"),
+              onPressed: () => {},
+            ),
+            OutlineButton(
+              child: Text("normal"),
+              onPressed: () => {},
+            ),
+            IconButton(
+              icon: Icon(Icons.thumb_up),
+              onPressed: () => {},
+            ),
+            FlatButton(
+              color: Colors.blue,
+              highlightColor: Colors.blue[700],
+              colorBrightness: Brightness.dark,
+              splashColor: Colors.grey,
+              child: Text("Submit"),
+              shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+              onPressed: () => {},
+            ),
+            RaisedButton(
+              color: Colors.blue,
+              highlightColor: Colors.blue[700],
+              colorBrightness: Brightness.dark,
+              splashColor: Colors.grey,
+              child: Text("Submit"),
+              shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+              onPressed: () => {},
+            )
+          ],
+        ),
+        floatingActionButton: new FloatingActionButton(
+          tooltip: 'Add',
+          child: new Icon(Icons.add),
+          onPressed: () {
+            print(555555);
+          },
+        ),
     );
   }
 }
